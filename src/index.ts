@@ -4,7 +4,7 @@ import { IntentsBitField } from 'discord.js';
 
 const client = new JellyCommands({
     // https://jellycommands.dev/guide/commands/loading
-    commands: 'src/commands',
+    // commands: 'src/commands',
 
     // https://jellycommands.dev/guide/events/loading
     events: 'src/events',
