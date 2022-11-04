@@ -4,6 +4,9 @@ import { config } from '../config';
 
 // TODO use x-cache-time-remaining header?
 
+// Five minutes
+const TIME = 300000;
+
 export default event({
     name: 'ready',
     run: async (_, client) => {
@@ -20,6 +23,6 @@ export default event({
             console.log('Updating player count');
             await setPlayerCount(guild);
             console.log('  Updated player count');
-        }, 300000);
+        }, TIME);
     },
 });
