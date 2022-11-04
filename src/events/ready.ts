@@ -2,7 +2,7 @@ import { setPlayerCount } from '../lib/playerCount';
 import { event } from 'jellycommands';
 import { config } from '../config';
 
-// @TODO use x-cache-time-remaining header?
+// TODO use x-cache-time-remaining header?
 
 export default event({
     name: 'ready',
