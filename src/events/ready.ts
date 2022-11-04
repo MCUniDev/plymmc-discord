@@ -2,7 +2,10 @@ import { setPlayerCount } from '../lib/playerCount';
 import { event } from 'jellycommands';
 import { config } from '../config';
 
-// @TODO use x-cache-time-remaining header?
+// TODO use x-cache-time-remaining header?
+
+// Five minutes
+const TIME = 300000;
 
 export default event({
     name: 'ready',
@@ -20,6 +23,6 @@ export default event({
             console.log('Updating player count');
             await setPlayerCount(guild);
             console.log('  Updated player count');
-        }, 300000);
+        }, TIME);
     },
 });
