@@ -2,10 +2,7 @@ import { setPlayerCount } from '../lib/playerCount';
 import { event } from 'jellycommands';
 import { config } from '../config';
 
-// TODO use x-cache-time-remaining header?
-
-// Five minutes
-const TIME = 300000;
+const TIME = 180000;
 
 export default event({
     name: 'ready',
