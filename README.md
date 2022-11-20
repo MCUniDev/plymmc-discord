@@ -1,1 +1,1 @@
-# UOP Discord Bot
+# PlymMC Discord Bot
