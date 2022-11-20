@@ -21,5 +21,5 @@ export async function setPlayerCount(guild: Guild) {
 
     const count = await getPlayerCount();
 
-    await channel.setName(`${count} Player${count > 1 ? 's' : ''} Online`);
+    await channel.setName(`${count} Player${count != 1 ? 's' : ''} Online`);
 }
